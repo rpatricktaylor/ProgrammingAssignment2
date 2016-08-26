@@ -45,7 +45,7 @@ cacheSolve <- function(x, ...) {
       message("Cannot compute inverse for non-square matrix")
       inv <- NULL
     } else {
-      inv <- solve(x$get())
+      inv <- solve(x$get(), ...)
     }
     x$setInv(inv)
   }
